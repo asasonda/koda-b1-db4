@@ -21,7 +21,7 @@ CREATE Table users (
     contact VARCHAR(20)
 );
 
-employee
+-- employee
 create Table employee(
     id INTEGER generated ALWAYS as IDENTITY PRIMARY KEY,
     NIP VARCHAR(50) NOT NULL UNIQUE,
