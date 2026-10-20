@@ -8,7 +8,10 @@ erDiagram
         varchar,NOTNULL username
         varchar,UNIQUE,NOTNULL email
         varchar password_hash
-        varchar role_id FK
+        varchar,NOTNULL first_name
+        varchar,NOTNULL last_name
+        int role_id FK
+        int employee FK
         varchar contact
     }
 
@@ -20,10 +23,6 @@ erDiagram
     EMPLOYEE{
         int id PK
         varchar,UNIQUE,NOTNULL NIP
-        varchar password_hash
-        varchar,NOTNULL first_name
-        varchar,NOTNULL last_name
         varchar,NOTNULL gelar
-        varchar role_id FK
     }
 ```
